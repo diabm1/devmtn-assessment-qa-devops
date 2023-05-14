@@ -9,6 +9,7 @@ const playerRecord = {
 const app = express();
 
 app.use(express.json());
+app.use(express.static('public'))
 
 // Add up the total health of all the robots
 const calculateTotalHealth = (robots) =>

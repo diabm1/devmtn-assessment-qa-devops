@@ -4,6 +4,7 @@ const bots = require("./src/botsData");
 const shuffle = require("./src/shuffle");
 const Rollbar = require("rollbar");
 const { ROLLBAR_ACCESS_TOKEN } = process.env;
+console.log(ROLLBAR_ACCESS_TOKEN)
 
 const playerRecord = {
   wins: 0,

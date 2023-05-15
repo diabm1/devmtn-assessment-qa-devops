@@ -4,7 +4,7 @@ const bots = require("./src/botsData");
 const shuffle = require("./src/shuffle");
 const Rollbar = require("rollbar");
 const { ROLLBAR_ACCESS_TOKEN } = process.env;
-console.log(ROLLBAR_ACCESS_TOKEN)
+// console.log(ROLLBAR_ACCESS_TOKEN)
 
 const playerRecord = {
   wins: 0,
@@ -22,7 +22,7 @@ const rollbar = new Rollbar({
 rollbar.log("Hello world!");
 
 app.use(express.json());
-app.use(express.static("public"));
+// app.use(express.static("public"));
 app.use(rollbar.errorHandler());
 app.use(express.static(`${__dirname}/public`))
 
